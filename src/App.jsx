@@ -55,10 +55,12 @@ const App = () => {
       )}
 
       <form onSubmit={onSubmitHandler}>
-        <input
+        <Input
           type="text"
-          placeholder="Enter your city..."
+          label="Your city name"
+          placeholder="Madrid..."
           value={input}
+          id="input-city"
           onChange={(e) => setInput(e.target.value)}
         />
         <button type="submit">See the weather</button>
