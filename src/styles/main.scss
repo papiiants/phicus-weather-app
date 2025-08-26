@@ -1,0 +1,15 @@
+@use './fonts' as *;
+@use './variables' as *;
+@use 'helpers';
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+.container {
+  width: var(--container-width);
+  padding-inline: var(--padding-x);
+  margin-inline: auto;
+}
