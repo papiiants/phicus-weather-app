@@ -1,6 +1,7 @@
 import './styles/main.scss'
 import { useEffect, useState } from 'react'
 import Input from './components/Input'
+import Button from './components/Button'
 
 const App = () => {
   const [input, setInput] = useState('')
@@ -25,6 +26,9 @@ const App = () => {
       .then((response) => {
         if (response.cod === 200) {
           setData(response)
+
+          console.log(response)
+
           if (!inputCities.includes(cityName)) {
             const updatedCities = [...inputCities, cityName]
             setInputCities(updatedCities)
@@ -63,7 +67,7 @@ const App = () => {
           id="input-city"
           onChange={(e) => setInput(e.target.value)}
         />
-        <button type="submit">See the weather</button>
+        <Button type="submit">Get weather data</Button>
       </form>
 
       {
