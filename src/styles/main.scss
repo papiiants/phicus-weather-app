@@ -1,15 +1,7 @@
-@use './fonts' as *;
-@use './variables' as *;
-@use 'helpers';
+@use './normalize';
+@use './fonts';
+@use './variables';
+@use 'utils';
+@use 'globals';
 
-body {
-  font-family: var(--font-main);
-  color: var(--color-light);
-  background-color: var(--color-dark);
-}
-
-.container {
-  width: var(--container-width);
-  padding-inline: var(--padding-x);
-  margin-inline: auto;
-}
+@use './blocks/weater-app';

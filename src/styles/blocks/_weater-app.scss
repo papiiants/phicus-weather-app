@@ -1,0 +1,100 @@
+.weather-app {
+  --mainGap: 120px;
+
+  display: grid;
+  row-gap: 40px;
+  max-width: 350px;
+  margin-inline: auto;
+  padding-block: 80px;
+
+  @media (width > 799.98px) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--mainGap);
+    max-width: 800px;
+  }
+
+  &__title {
+    font-size: 30px;
+    display: grid;
+
+    & span {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  &__inner,
+  &__history {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  &::content(.weather-app__history) {
+    display: none;
+  }
+
+  &__inner {
+    position: relative;
+
+    @media (width > 799.98px) {
+      &::after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: calc(var(--mainGap) / 2 * -1);
+        background-color: var(--color-light-10);
+      }
+    }
+
+    &-body {
+      display: grid;
+      row-gap: 5px;
+    }
+
+
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    column-gap: 20px;
+  }
+
+  &__param {
+    font-weight: 400;
+    text-align: right;
+    color: var(--color-light-10);
+
+    span {
+      padding-inline: 5px;
+      font-weight: 500;
+      font-size: 20px;
+      color: var(--color-light);
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: end;
+    column-gap: 10px;
+  }
+
+  &__history {
+    &-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+    }
+  }
+}

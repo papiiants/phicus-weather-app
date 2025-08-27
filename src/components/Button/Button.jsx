@@ -2,6 +2,7 @@ import './Button.scss'
 
 const Button = (props) => {
   const {
+    className,
     type,
     onClick,
     children,
@@ -9,7 +10,7 @@ const Button = (props) => {
 
   return (
     <button
-      className="button"
+      className={className}
       type={type}
       onClick={onClick}
     >

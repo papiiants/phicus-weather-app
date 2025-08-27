@@ -15,8 +15,9 @@ const Input = (props) => {
     <div
       className='input'
     >
-      <label htmlFor={id}>{label}</label>
+      <label className="input__label" htmlFor={id}>{label}</label>
       <input
+        className="input__action"
         id={id}
         type={type}
         name={name}
