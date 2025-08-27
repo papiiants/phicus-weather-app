@@ -1,12 +1,25 @@
-# React + Vite
+# Test projecto from Phicus company
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Task
+Develop a web application that allows you to obtain current weather information for any location in the world, using the public API of:
+[OpenWeatherMap](https://openweathermap.org/)
 
-Currently, two official plugins are available:
+## Rules
+The minimum data to be displayed on the screen will be:
+- Location consulted
+- Current weather conditions (sunny, cloudy, etc.)
+- Current temperature
+- Atmospheric pressure
+- Relative humidity
+- Visibility
+- Wind information
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Weather information must be displayed in the most graphic way possible, using iconography appropriate for the different possible states.
+In addition, the web application must allow you to store, in local persistence, a list of the consulted
+locations and switch between them to display the weather information and forecast for the selected location.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## To run
+Download project files 
+In terminal:
+'npm i'
+'npm run dev'
