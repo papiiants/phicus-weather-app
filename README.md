@@ -18,6 +18,8 @@ Weather information must be displayed in the most graphic way possible, using ic
 In addition, the web application must allow you to store, in local persistence, a list of the consulted
 locations and switch between them to display the weather information and forecast for the selected location.
 
+## [Link to app preview]()
+
 ## To run
 Download project files 
 In terminal:
